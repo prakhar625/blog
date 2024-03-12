@@ -1,0 +1,224 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  /* font-family: Arial, sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Barlow", sans-serif; */
+  /* font-family: "EB Garamond", serif; */
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* font-weight: 400; */
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  overflow-x: hidden;;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+header {
+  /* background-color: #f4f4f4; */
+  max-width: 960px;
+  padding: 0.8rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+/* Main content styles */
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+article {
+  margin-bottom: 40px;
+  /* margin-top: -200px;
+  z-index: 10;
+  background: white;
+  padding: 0 1rem; */
+}
+
+/* article h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+} */
+
+/* article p {
+  margin-bottom: 20px;
+} */
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 1rem;
+  font-family: system-ui, "Inter", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+/* Footer styles */
+footer {
+  /* background-color: #f4f4f4; */
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for index.html - home entry point*/
+.home-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+
+.home-wrapper h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-wrapper p{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for post.html template*/
+.cover-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-media {
+  width: 100vw;
+  max-height: 500px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0;
+}
+
+.cover-media img,
+.cover-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+
+.post-wrapper h1.post-title {
+  font-size: 8rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  line-height: 1;
+  /* text-align: center; */
+}
+.post-wrapper .post-subtitle {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  /* text-align: center; */
+}
+
+.post-wrapper .post-content-header-divider{
+  margin: 3rem 0;
+  opacity: 0.2;
+}
+
+.post-wrapper h1{
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+}
+.post-wrapper h2{
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+}
+.post-wrapper h3{
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.post-wrapper p, .post-wrapper a, .post-wrapper li, .post-wrapper blockquote{
+  font-size: 1rem;
+}
+
+.post-wrapper a{
+}
+
+.post-wrapper p{
+  margin: .5rem 0;
+  line-height: 1.5;
+}
+
+.post-content img, .post-content video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 16px;
+}
+

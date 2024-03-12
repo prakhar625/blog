@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ultimate Markdown Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <header>
+  <h1>pbx.notes</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="post-wrapper">
+    {{#cover_image}}
+    <div class="cover-media">
+      {{#is_video}}
+      <video autoplay loop muted playsinline>
+        <source src="../videos/video2.mp4" type="video/mp4">
+      </video>
+      {{/is_video}}
+      {{^is_video}}
+      <img src="../videos/video2.mp4" alt="Cover Image">
+      {{/is_video}}
+    </div>
+    {{/cover_image}}
+    <article>
+      <h1 class="post-title">The Ultimate Markdown Test</h1>
+      <p class="post-subtitle">Published on 2023-07-4</p>
+      <hr class="post-content-header-divider"/>
+      <div class="post-content">
+        <h1>Ultimate Markdown Test Blog Post</h1>
+<p>Welcome to the <strong>Ultimate Markdown Test Blog Post</strong>! This post is designed to push the limits of markdown formatting and test the rendering capabilities of your compiler. Let's dive into the various cases and see how well your compiler handles them.</p><h2>Headings with Inline Formatting</h2>
+<h1>Heading 1 <em>with italic text</em> and <strong>bold text</strong></h1>
+<h2>Heading 2 <s>with strikethrough</s> and <em><strong>bold italic</strong></em></h2>
+<h3>Heading 3 <code>with inline code</code> and <a href="https://example.com">links</a></h3>
+<h2>Nested Lists</h2>
+<ol>
+<li><p>First item</p>
+<ul>
+<li><p>Subitem 1</p>
+<ol>
+<li><p>Nested subitem 1</p></li>
+<li><p>Nested subitem 2</p></li>
+</ol>
+</li>
+<li><p>Subitem 2</p></li>
+</ul>
+</li>
+<li><p>Second item</p>
+<ol>
+<li><p>Subitem 1</p>
+<ul>
+<li><p>Nested subitem 1</p>
+<ul>
+<li><p>Sub-nested item 1</p></li>
+<li><p>Sub-nested item 2</p></li>
+</ul>
+</li>
+<li><p>Nested subitem 2</p></li>
+</ul>
+</li>
+<li><p>Subitem 2</p></li>
+</ol>
+</li>
+</ol>
+<h2>Complex Links and Images</h2>
+<p><a href="https://example.com/bold_italic">Link with <strong>bold</strong> and <em>italic</em> text</a></p><p><a href="https://www.jdinstitute.edu.in/media/2021/05/thumbnail-1.jpg"><img src="https://www.jdinstitute.edu.in/media/2021/05/thumbnail-1.jpg" alt="Alt text"></a></p><h2>Code Blocks with Syntax Highlighting</h2>
+<pre><code class="language-python">def fibonacci(n):
+    if n &lt;= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fib = [0, 1]
+        for i in range(2, n):
+            fib.append(fib[i-1] + fib[i-2])
+        return fib
+
+print(fibonacci(10))
+</code></pre>
+<h2>Blockquotes with Nested Elements</h2>
+<blockquote>
+<p>This is a blockquote.</p><blockquote>
+<p>This is a nested blockquote.</p><ul>
+<li><p>With a list item</p></li>
+<li><p>And another one</p></li>
+</ul>
+</blockquote>
+<p>Back to the first level.</p></blockquote>
+<h2>Tables with Inline Formatting</h2>
+<table>
+<thead>
+<tr>
+<th>Column 1</th>
+<th style="text-align:center">Column 2</th>
+<th style="text-align:right">Column 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Italic</em></td>
+<td style="text-align:center"><strong>Bold</strong></td>
+<td style="text-align:right"><s>Strikethrough</s></td>
+</tr>
+<tr>
+<td><a href="https://example.com">Link</a></td>
+<td style="text-align:center"><code>Inline code</code></td>
+<td style="text-align:right"><em><strong>Bold Italic</strong></em></td>
+</tr>
+</tbody>
+</table>
+<h2>Task Lists with Nested Items</h2>
+<ul>
+<li><p>[x] Task 1</p>
+<ul>
+<li><p>[x] Subtask 1</p></li>
+<li><p>[ ] Subtask 2</p>
+<ul>
+<li><p>[ ] Nested subtask 1</p></li>
+<li><p>[x] Nested subtask 2</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>[ ] Task 2</p></li>
+</ul>
+<h2>Footnotes with Multiple References</h2>
+<p>This is a sentence with multiple footnotes.[^1][^2]</p><p>[^1]: First footnote.
+[^2]: Second footnote.</p><p>Another reference to the first footnote.[^1]</p><h2>Escaped Characters</h2>
+<p>*This is not italic*</p><p>`This is not inline code`</p><p>[This is not a link](https://example.com)</p><hr>
+<p>That's it! The <strong>Ultimate Markdown Test Blog Post</strong> has come to an end. If your compiler can handle all these cases flawlessly, congratulations! You have a robust markdown rendering system. Feel free to modify and expand upon this test content to suit your specific needs.</p><p>Happy markdown testing!</p>
+<!--       
+        {{#videos}}
+        <video controls>
+          <source src="{{url}}" type="{{type}}">
+          Your browser does not support the video tag.
+        </video>
+        {{/videos}}
+      
+        {{#audio}}
+        <audio controls>
+          <source src="{{url}}" type="{{type}}">
+          Your browser does not support the audio tag.
+        </audio>
+        {{/audio}} -->
+      </div>
+    </article>
+  </main>
+
+  <footer>
+  <p>&copy; 2024 Prakhar Bhardwaj. All rights reserved.</p>
+</footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>

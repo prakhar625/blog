@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Blog Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <header>
+  <h1>pbx.notes</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="post-wrapper">
+    {{#cover_image}}
+    <div class="cover-media">
+      {{#is_video}}
+      <video autoplay loop muted playsinline>
+        <source src="../images/free-photo-of-portugal.jpeg" type="video/mp4">
+      </video>
+      {{/is_video}}
+      {{^is_video}}
+      <img src="../images/free-photo-of-portugal.jpeg" alt="Cover Image">
+      {{/is_video}}
+    </div>
+    {{/cover_image}}
+    <article>
+      <h1 class="post-title">My First Blog Post</h1>
+      <p class="post-subtitle">Published on 2023-06-10</p>
+      <hr class="post-content-header-divider"/>
+      <div class="post-content">
+        <h1>Introduction</h1>
+<p>Welcome to my first blog post! I'm excited to share my thoughts and experiences with you. In this post, I'll be discussing the importance of writing clean and maintainable code.</p><h2>Why Clean Code Matters</h2>
+<p>Writing clean code is essential for several reasons:</p><ol>
+<li><p>It improves readability and understandability.</p></li>
+<li><p>It makes maintenance and debugging easier.</p></li>
+<li><p>It promotes collaboration among team members.</p></li>
+</ol>
+<h3>Tips for Writing Clean Code</h3>
+<p>Here are some tips to help you write clean code:</p><ul>
+<li><p>Use meaningful variable and function names.</p></li>
+<li><p>Keep functions small and focused on a single task.</p></li>
+<li><p>Use comments to explain complex code sections.</p></li>
+<li><p>Follow consistent formatting and indentation.</p></li>
+</ul>
+<h2>Conclusion</h2>
+<p>In conclusion, writing clean code is a vital skill for every developer. By following best practices and keeping your code organized and readable, you can create more maintainable and efficient software.</p><p>Thanks for reading my first blog post!</p>
+<!--       
+        {{#videos}}
+        <video controls>
+          <source src="{{url}}" type="{{type}}">
+          Your browser does not support the video tag.
+        </video>
+        {{/videos}}
+      
+        {{#audio}}
+        <audio controls>
+          <source src="{{url}}" type="{{type}}">
+          Your browser does not support the audio tag.
+        </audio>
+        {{/audio}} -->
+      </div>
+    </article>
+  </main>
+
+  <footer>
+  <p>&copy; 2024 Prakhar Bhardwaj. All rights reserved.</p>
+</footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>

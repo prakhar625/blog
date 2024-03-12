@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Benefits of Test-Driven Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <header>
+  <h1>pbx.notes</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="post-wrapper">
+    {{#cover_image}}
+    <div class="cover-media">
+      {{#is_video}}
+      <video autoplay loop muted playsinline>
+        <source src="../images/george-webster-p1VZ5IbT2Tg-unsplash.jpg" type="video/mp4">
+      </video>
+      {{/is_video}}
+      {{^is_video}}
+      <img src="../images/george-webster-p1VZ5IbT2Tg-unsplash.jpg" alt="Cover Image">
+      {{/is_video}}
+    </div>
+    {{/cover_image}}
+    <article>
+      <h1 class="post-title">The Benefits of Test-Driven Development</h1>
+      <p class="post-subtitle">Published on 2023-06-15</p>
+      <hr class="post-content-header-divider"/>
+      <div class="post-content">
+        <h1>Introductionzz</h1>
+<p>In this blog post, we'll explore the benefits of Test-Driven Development (TDD) and how it can help improve the quality and reliability of your code.</p><h2>What is Test-Driven Development?</h2>
+<p>Test-Driven Development is a software development approach where tests are written before the actual code. The process follows these steps:</p><ol>
+<li><p>Write a failing test.</p></li>
+<li><p>Write the minimum code required to pass the test.</p></li>
+<li><p>Refactor the code to improve its design and maintainability.</p></li>
+<li><p>Repeat the process for the next feature or requirement.</p></li>
+</ol>
+<h3>A sample video file here</h3>
+<figure><video controls><source src="../videos/pexels_videos_1093659.mp4" type="video/mp4"></video><figcaption>Caption text goes here</figcaption></figure>
+<h3>A sample audio file there...</h3>
+<figure><audio controls><source src="../audio/short_scifi_34_1003_librivox/youth_asimov_gam_64kb.mp3" type="audio/mp3"></audio><figcaption>Caption text goes here</figcaption></figure>
+<h3>A sample image embedded inline</h3>
+<figure><img src="../images/ComfyUI_00086_.png" alt="img alt text"><figcaption>Caption text goes here</figcaption></figure>
+<h2>Benefits of Test-Driven Development</h2>
+<p>TDD offers several advantages:</p><ol>
+<li>
+<p><strong>Improved Code Quality</strong>: By writing tests first, you ensure that your code is testable and meets the specified requirements.</p></li>
+<li>
+<p><strong>Faster Debugging</strong>: When tests fail, it helps identify and isolate bugs quickly, making debugging more efficient.</p></li>
+<li>
+<p><strong>Confidence in Refactoring</strong>: With a comprehensive test suite, you can confidently refactor your code without fear of breaking existing functionality.</p></li>
+</ol>
+<h2>Getting Started with TDD</h2>
+<p>To get started with TDD, follow these steps:</p><ol>
+<li><p>Choose a testing framework for your programming language.</p></li>
+<li><p>Write a failing test for the feature you want to implement.</p></li>
+<li><p>Write the code to make the test pass.</p></li>
+<li><p>Refactor the code if necessary.</p></li>
+<li><p>Repeat the process for the next feature.</p></li>
+</ol>
+<h2>Conclusion</h2>
+<p>Test-Driven Development is a powerful approach that can help you create more reliable and maintainable code. By writing tests first, you can catch bugs early, improve code quality, and have confidence in your software.</p><p>Give TDD a try in your next project and experience the benefits for yourself!</p>
+<!--       
+        {{#videos}}
+        <video controls>
+          <source src="{{url}}" type="{{type}}">
+          Your browser does not support the video tag.
+        </video>
+        {{/videos}}
+      
+        {{#audio}}
+        <audio controls>
+          <source src="{{url}}" type="{{type}}">
+          Your browser does not support the audio tag.
+        </audio>
+        {{/audio}} -->
+      </div>
+    </article>
+  </main>
+
+  <footer>
+  <p>&copy; 2024 Prakhar Bhardwaj. All rights reserved.</p>
+</footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>
