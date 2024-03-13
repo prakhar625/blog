@@ -14,21 +14,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Toggle mobile navigation menu
-const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
+// const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+// const mobileMenu = document.querySelector(".mobile-menu");
 
-mobileMenuToggle.addEventListener("click", function () {
-  mobileMenu.classList.toggle("active");
-});
+// mobileMenuToggle.addEventListener("click", function () {
+//   mobileMenu.classList.toggle("active");
+// });
 
 // Close mobile menu when a link is clicked
-const mobileNavLinks = document.querySelectorAll(".mobile-menu a");
+// const mobileNavLinks = document.querySelectorAll(".mobile-menu a");
 
-mobileNavLinks.forEach(function (link) {
-  link.addEventListener("click", function () {
-    mobileMenu.classList.remove("active");
-  });
-});
+// mobileNavLinks.forEach(function (link) {
+//   link.addEventListener("click", function () {
+//     mobileMenu.classList.remove("active");
+//   });
+// });
 
 // Highlight active navigation link
 const currentPath = window.location.pathname;
