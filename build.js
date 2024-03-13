@@ -85,19 +85,31 @@ fs.readdirSync(path.join(__dirname, "src", "posts")).forEach((file) => {
       path.join(__dirname, "src", "templates", "post.html"),
       "utf8"
     );
+    const isVideo =
+      attributes.cover_image &&
+      (attributes.cover_image.endsWith(".mp4") ||
+        (attributes.cover_image.startsWith("http") &&
+          attributes.cover_image.includes(".mp4")));
     const postHtml = postTemplate
       .replace(/\{\{header\}\}/g, headerTemplate)
       .replace(/\{\{title\}\}/g, attributes.title)
       .replace(/\{\{date\}\}/g, attributes.date)
       .replace(/\{\{cover_image\}\}/g, attributes.cover_image || "")
-      .replace(
-        /\{\{is_video\}\}/g,
-        attributes.cover_image && attributes.cover_image.endsWith(".mp4")
-          ? "true"
-          : "false"
-      )
+      .replace(/\{\{is_video\}\}/g, isVideo ? "true" : "false")
       .replace(/\{\{\{content\}\}\}/g, htmlContent)
-      .replace(/\{\{footer\}\}/g, footerTemplate);
+      .replace(/\{\{footer\}\}/g, footerTemplate)
+      .replace(
+        /\{\{#cover_image\}\}([\s\S]*?)\{\{\/cover_image\}\}/g,
+        attributes.cover_image ? "$1" : ""
+      )
+      .replace(
+        /\{\{#is_video\}\}([\s\S]*?)\{\{\/is_video\}\}/g,
+        isVideo ? "$1" : ""
+      )
+      .replace(
+        /\{\{\^is_video\}\}([\s\S]*?)\{\{\/is_video\}\}/g,
+        isVideo ? "" : "$1"
+      );
 
     const outputFile = path.join(
       __dirname,
@@ -112,7 +124,7 @@ fs.readdirSync(path.join(__dirname, "src", "posts")).forEach((file) => {
       date: new Date(attributes.date),
       url: `posts/${path.basename(file, ".md")}.html`,
       cover_image: attributes.cover_image || "",
-      is_video: attributes.cover_image && attributes.cover_image.endsWith(".mp4"),
+      isVideo: isVideo,
     });
   }
 });

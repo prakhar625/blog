@@ -1,7 +1,6 @@
 ---
 title: My First Blog Post
 date: 2023-06-10
-cover_image: ../images/free-photo-of-portugal.jpeg
 ---
 
 # Introduction

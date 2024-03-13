@@ -26,18 +26,7 @@
 </header>
 
   <main class="post-wrapper">
-    {{#cover_image}}
-    <div class="cover-media">
-      {{#is_video}}
-      <video autoplay loop muted playsinline>
-        <source src="../images/free-photo-of-portugal.jpeg" type="video/mp4">
-      </video>
-      {{/is_video}}
-      {{^is_video}}
-      <img src="../images/free-photo-of-portugal.jpeg" alt="Cover Image">
-      {{/is_video}}
-    </div>
-    {{/cover_image}}
+    
     <article>
       <h1 class="post-title">My First Blog Post</h1>
       <p class="post-subtitle">Published on 2023-06-10</p>
@@ -59,20 +48,6 @@
 </ul>
 <h2>Conclusion</h2>
 <p>In conclusion, writing clean code is a vital skill for every developer. By following best practices and keeping your code organized and readable, you can create more maintainable and efficient software.</p><p>Thanks for reading my first blog post!</p>
-<!--       
-        {{#videos}}
-        <video controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the video tag.
-        </video>
-        {{/videos}}
-      
-        {{#audio}}
-        <audio controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the audio tag.
-        </audio>
-        {{/audio}} -->
       </div>
     </article>
   </main>

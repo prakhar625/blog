@@ -26,18 +26,16 @@
 </header>
 
   <main class="post-wrapper">
-    {{#cover_image}}
+    
     <div class="cover-media">
-      {{#is_video}}
+      
       <video autoplay loop muted playsinline>
         <source src="../videos/video2.mp4" type="video/mp4">
       </video>
-      {{/is_video}}
-      {{^is_video}}
-      <img src="../videos/video2.mp4" alt="Cover Image">
-      {{/is_video}}
+      
+      
     </div>
-    {{/cover_image}}
+    
     <article>
       <h1 class="post-title">The Ultimate Markdown Test</h1>
       <p class="post-subtitle">Published on 2023-07-4</p>
@@ -146,20 +144,6 @@ print(fibonacci(10))
 [^2]: Second footnote.</p><p>Another reference to the first footnote.[^1]</p><h2>Escaped Characters</h2>
 <p>*This is not italic*</p><p>`This is not inline code`</p><p>[This is not a link](https://example.com)</p><hr>
 <p>That's it! The <strong>Ultimate Markdown Test Blog Post</strong> has come to an end. If your compiler can handle all these cases flawlessly, congratulations! You have a robust markdown rendering system. Feel free to modify and expand upon this test content to suit your specific needs.</p><p>Happy markdown testing!</p>
-<!--       
-        {{#videos}}
-        <video controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the video tag.
-        </video>
-        {{/videos}}
-      
-        {{#audio}}
-        <audio controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the audio tag.
-        </audio>
-        {{/audio}} -->
       </div>
     </article>
   </main>

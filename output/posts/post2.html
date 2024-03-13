@@ -26,18 +26,14 @@
 </header>
 
   <main class="post-wrapper">
-    {{#cover_image}}
+    
     <div class="cover-media">
-      {{#is_video}}
-      <video autoplay loop muted playsinline>
-        <source src="../images/george-webster-p1VZ5IbT2Tg-unsplash.jpg" type="video/mp4">
-      </video>
-      {{/is_video}}
-      {{^is_video}}
+      
+      
       <img src="../images/george-webster-p1VZ5IbT2Tg-unsplash.jpg" alt="Cover Image">
-      {{/is_video}}
+      
     </div>
-    {{/cover_image}}
+    
     <article>
       <h1 class="post-title">The Benefits of Test-Driven Development</h1>
       <p class="post-subtitle">Published on 2023-06-15</p>
@@ -76,20 +72,6 @@
 </ol>
 <h2>Conclusion</h2>
 <p>Test-Driven Development is a powerful approach that can help you create more reliable and maintainable code. By writing tests first, you can catch bugs early, improve code quality, and have confidence in your software.</p><p>Give TDD a try in your next project and experience the benefits for yourself!</p>
-<!--       
-        {{#videos}}
-        <video controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the video tag.
-        </video>
-        {{/videos}}
-      
-        {{#audio}}
-        <audio controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the audio tag.
-        </audio>
-        {{/audio}} -->
       </div>
     </article>
   </main>

@@ -26,18 +26,14 @@
 </header>
 
   <main class="post-wrapper">
-    {{#cover_image}}
+    
     <div class="cover-media">
-      {{#is_video}}
-      <video autoplay loop muted playsinline>
-        <source src="../images/photo-1635957645025-d26009c61aa2.avif" type="video/mp4">
-      </video>
-      {{/is_video}}
-      {{^is_video}}
+      
+      
       <img src="../images/photo-1635957645025-d26009c61aa2.avif" alt="Cover Image">
-      {{/is_video}}
+      
     </div>
-    {{/cover_image}}
+    
     <article>
       <h1 class="post-title">Test Markdown File</h1>
       <p class="post-subtitle">Published on 2023-06-20</p>
@@ -119,20 +115,6 @@ greet(&quot;John&quot;)
 </ul>
 <h2>Footnotes</h2>
 <p>This is a sentence with a footnote.[^1]</p><p>[^1]: This is the footnote.</p>
-<!--       
-        {{#videos}}
-        <video controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the video tag.
-        </video>
-        {{/videos}}
-      
-        {{#audio}}
-        <audio controls>
-          <source src="{{url}}" type="{{type}}">
-          Your browser does not support the audio tag.
-        </audio>
-        {{/audio}} -->
       </div>
     </article>
   </main>
