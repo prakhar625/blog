@@ -2,7 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const MarkdownIt = require("markdown-it");
 
-const md = new MarkdownIt();
+const md = new MarkdownIt({
+  html: true,
+});
 
 // Read the header and footer templates
 const headerTemplate = fs.readFileSync(
@@ -82,6 +84,54 @@ md.renderer.rules.list_item_open = function (tokens, idx, options, env, self) {
   }
 
   return self.renderToken(tokens, idx, options);
+};
+
+md.renderer.rules.details_open = function (tokens, idx) {
+  return "<details>";
+};
+
+md.renderer.rules.details_close = function (tokens, idx) {
+  return "</details>";
+};
+
+md.renderer.rules.summary_open = function (tokens, idx) {
+  return "<summary>";
+};
+
+md.renderer.rules.summary_close = function (tokens, idx) {
+  return "</summary>";
+};
+
+
+
+// embeds
+md.renderer.rules.embed_open = function (tokens, idx) {
+  const src = tokens[idx].attrs[0][1];
+  
+  if (src.includes('youtube.com/embed/')) {
+    return `<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="${src}" allowfullscreen></iframe></div>`;
+  } else {
+    return `<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="${src}"></iframe></div>`;
+  }
+};
+md.renderer.rules.embed_close = function (tokens, idx) {
+  return '';
+};
+
+md.renderer.rules.paragraph_open = function (tokens, idx) {
+  const embeddedContent = tokens[idx + 1] && tokens[idx + 1].type === 'inline' && tokens[idx + 1].content.startsWith('<embed');  
+  if (embeddedContent) {
+    return '';
+  }
+  return '<p>';
+};
+
+md.renderer.rules.paragraph_close = function (tokens, idx) {
+  const embeddedContent = tokens[idx - 1] && tokens[idx - 1].type === 'inline' && tokens[idx - 1].content.startsWith('<embed');
+  if (embeddedContent) {
+    return '';
+  }
+  return '</p>';
 };
 
 // Process each Markdown file

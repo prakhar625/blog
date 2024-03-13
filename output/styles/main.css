@@ -16,11 +16,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   --accent-color: #ffcc00;
   --secondary-color: #f4f4f4;
   --text-color: #444;
+  --background-color-pure: #fff;
   --background-color: #f4f4f4;
   --border-color: #f5f5f5;
   --border-radius-m: 8px;
-  --border-radius-l: 16px;
-  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --border-radius-l: 24px;
+  --media-box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 32px 32px -8px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -36,7 +37,8 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-color);
-  overflow-x: hidden;;
+  overflow-x: hidden;
+  background: url('../images/dot-grid-pattern.png');
 }
 
 a {
@@ -70,12 +72,22 @@ ul ul, ol ol {
 }
 
 blockquote {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-left: 4px solid #ccc;
+  margin: 1.5rem 0;
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: var(--border-radius-m);
+
+  border-left: 1px solid #ccc;
+  /* background-color: #f9f9f9; */
+  background: rgb(249,249,249);
+  background: linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.post-wrapper blockquote p, .post-wrapper blockquote p a {
   font-family: serif;
   font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
 }
 
 table {
@@ -118,11 +130,76 @@ figure figcaption {
   opacity: 0.5;
 }
 
-
-
-.footnotes {
-  font-size: 0.8em;
+h1, h2, h3, h4, h5, h6{
+  margin-top: 1rem;
+  font-family: system-ui, "Inter", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  margin: 3rem 0 1rem;
 }
+
+details {
+  margin-bottom: 20px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+details[open] summary {
+  background-color: #e6e6e6;
+}
+
+details[open] {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+
+
+
+
+embed, .embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 480px;
+  padding: 0;
+  overflow: hidden;
+
+  border-radius: var(--border-radius-l);
+  box-shadow: var(--media-box-shadow);
+}
+
+.embed-responsive::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
 
 /* Header styles */
 header {
@@ -134,7 +211,7 @@ header {
   margin: 0 auto;
   border-bottom: 1px solid var(--border-color);
 
-  position: fixed;
+  /* position: fixed; */
   z-index: 100;
   background: hsla(0, 0%, 100%, 0.5);
   backdrop-filter: blur(10px);
@@ -143,6 +220,7 @@ header {
 header h1, header h1 a {
   font-size: 24px;
   color: var(--text-color);
+  margin: 1rem 0;
 }
 
 header nav a {
@@ -168,8 +246,9 @@ nav ul li {
 main {
   max-width: 960px;
   margin: 0 auto 1rem;
-  padding: 0 20px;
-  padding-top: 5.2rem;
+  padding: 0 2rem;
+  /* padding-top: 5.2rem; */
+  background-color: var(--background-color-pure);
 }
 
 article {
@@ -184,14 +263,6 @@ article {
 /* article p {
   margin-bottom: 20px;
 } */
-
-h1, h2, h3, h4, h5, h6{
-  margin-top: 1rem;
-  font-family: system-ui, "Inter", sans-serif;
-  font-weight: 800;
-  line-height: 1;
-  margin: 1rem 0;
-}
 
 /* Footer styles */
 footer {
@@ -327,40 +398,51 @@ hr {
 
 .post-wrapper h1.post-title {
   font-size: 4rem;
-  font-weight: 200;
+  font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1;
-  /* text-align: center; */
+  text-align: center;
+  
+  letter-spacing: -.05em;
+  
+  background-image: linear-gradient(to right, rgb(23, 25, 26), rgb(69, 75, 78), rgb(23, 25, 26));
+  background-clip: text;
+  --webkit-background-clip: text;
+  color: transparent;
+  --webkit-text-fill-color: transparent;
 }
 .post-wrapper .post-subtitle {
   margin-top: 0.5rem;
   font-size: 1rem;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .post-wrapper h1{
+  font-size: 2.2rem;
   margin-top: 2.5rem;
-  font-size: 2.5rem;
 }
 .post-wrapper h2{
-  margin-top: 2.5rem;
   font-size: 1.8rem;
+  margin-top: 2.5rem;
 }
 .post-wrapper h3{
-  margin-top: 2.5rem;
   font-size: 1.5rem;
+  margin-top: 2.5rem;
 }
 
-.post-wrapper p, .post-wrapper a, .post-wrapper li, .post-wrapper blockquote{
+.post-wrapper p, .post-wrapper a, .post-wrapper li{
   font-size: 1rem;
 }
 
 .post-wrapper a{
 }
 
-.post-wrapper p{
-  margin: .5rem 0;
+.post-wrapper p:not(li p){
+  margin: 1rem 0;
+}
+.post-content p:not(blockquote p){
   line-height: 1.5;
+  max-width: 640px;
 }
 
 .post-content img, .post-content video {
@@ -368,6 +450,11 @@ hr {
   max-width: 100%;
   height: auto;
   /* margin: 20px 0; */
-  border-radius: 16px;
+  border-radius: var(--border-radius-l);
+  box-shadow: var(--media-box-shadow);
+}
+
+.footnotes {
+  font-size: 0.8em;
 }
 

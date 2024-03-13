@@ -38,4 +38,17 @@ if (currentPageLink) {
   currentPageLink.classList.add("active");
 }
 
-// Add any additional JavaScript functionality here
+// Accordian interaction
+document.addEventListener("DOMContentLoaded", function () {
+  const details = document.querySelectorAll("details");
+
+  details.forEach(function (detail) {
+    detail.addEventListener("toggle", function () {
+      if (this.open) {
+        this.classList.add("open");
+      } else {
+        this.classList.remove("open");
+      }
+    });
+  });
+});

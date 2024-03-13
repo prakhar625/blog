@@ -1,7 +1,7 @@
 ---
-title: Resource for Product Thinking & Management
+title: Resources for Product Thinking & Management
 date: 2024-03-02
-cover_image: ../images/george-webster-p1VZ5IbT2Tg-unsplash.jpg
+cover_image: ../images/photo-1517245386807-bb43f82c33c4.avif
 ---
 
 
@@ -11,11 +11,12 @@ But before we start, [here is a quick overview of what does a PM do generally?](
 
 ## Books
 
-### **1. Lean Startup** - by Eric Ries
+### 1. The Lean Startup
+_by Eric Ries_
 
-![Cover Image of Lean Startup by Eric Ries](https://media.licdn.com/dms/image/C4E12AQFwZySR8GhBjw/article-cover_image-shrink_600_2000/0/1520141216977?e=2147483647&v=beta&t=_roZTDbMFp4v1Dq4iwDyzS3C9Ax8JOXfWzracCWuzlo)
+![Book Image](https://media.licdn.com/dms/image/C4E12AQFwZySR8GhBjw/article-cover_image-shrink_600_2000/0/1520141216977?e=2147483647&v=beta&t=_roZTDbMFp4v1Dq4iwDyzS3C9Ax8JOXfWzracCWuzlo)
 
-###### Abstract:
+##### Abstract:
 Most startups fail. But many of those failures are preventable. The Lean Startup is a new approach being adopted across the globe, changing the way companies are built and new products are launched.
 
 Eric Ries defines a startup as an organization dedicated to creating something new under conditions of extreme uncertainty. This is just as true for one person in a garage or a group of seasoned professionals in a Fortune 500 boardroom. What they have in common is a mission to penetrate that fog of uncertainty to discover a successful path to a sustainable business.
@@ -24,9 +25,10 @@ The Lean Startup approach fosters companies that are both more capital efficient
 
 Rather than wasting time creating elaborate business plans, The Lean Startup offers entrepreneurs - in companies of all sizes - a way to test their vision continuously, to adapt and adjust before it's too late. Ries provides a scientific approach to creating and managing successful startups in a age when companies need to innovate more than ever.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/10127019)
+[Goodreads](https://www.goodreads.com/en/book/show/10127019)
 
-### **2. Inspired**: How to Create Tech Products Customers Love - _by Marty Cagan_
+### 2. Inspired: How to Create Tech Products Customers Love
+_by Marty Cagan_
 
 ![Cover Image](https://www.theproducthub.io/wp-content/uploads/2021/08/431345e16982fecd1307dda1d8ebea54.jpg)
 
@@ -35,18 +37,22 @@ The basic premise of Inspired is that the best tech companies create products in
 
 Inspired is secondarily aimed at the designers, engineers, user researchers and data scientists that work closely with the product managers on product teams at these same companies.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/35249663)
+[Goodreads](https://www.goodreads.com/en/book/show/35249663)
 
-### **3. Empowered**: Ordinary People, Extraordinary Products - _by Marty Cagan_
+### 3. Empowered: Ordinary People, Extraordinary Products
+_by Marty Cagan_
+
 ![Cover Image](https://images.squarespace-cdn.com/content/v1/5fad9cd8048f2f6bde076960/1616865484419-0YBRHAPKC26RV3P7WV7B/Image+from+iOS+(1).jpg)
 
 ###### Abstract:
 What is it about the top tech product companies such as Amazon, Apple, Google, Netflix and Tesla that enables their record of consistent innovation?   Most people think it’s because these companies are somehow able to find and attract a level of talent that makes this innovation possible. But the real advantage these companies have is not so much who they hire, but rather how they enable their people to work together to solve hard problems and create extraordinary products.  As legendary Silicon Valley coach--and coach to the founders of several of today’s leading tech companies--Bill Campbell said, “Leadership is about recognizing that there's a greatness in everyone, and your job is to create an environment where that greatness can emerge.”  The goal of EMPOWERED is to provide you, as a leader of product management, product design, or engineering, with everything you’ll need to create just such an environment.  As partners at The Silicon Valley Product Group, Marty Cagan and Chris Jones have long worked to reveal the best practices of the most consistently innovative companies in the world. A natural companion to the bestseller INSPIRED, EMPOWERED tackles head-on the reason why most companies fail to truly leverage the potential of their people to innovate: product leadership.  The book covers: EMPOWERED puts decades of lessons learned from the best leaders of the top technology companies in your hand as a guide. It shows you how to become the leader your team and company needs to not only survive but thrive.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/53481975)
+[Goodreads](https://www.goodreads.com/en/book/show/53481975)
 
 
-### **4. Working Backwards**: Insights, Stories, and Secrets from Inside Amazon - _by Bill Carr and Colin Bryar_
+### 4. Working Backwards: Insights, Stories, and Secrets from Inside Amazon
+_by Bill Carr and Colin Bryar_
+
 ![Cover Image](https://i.ytimg.com/vi/dYbZIG5rBag/maxresdefault.jpg)
 
 ###### Abstract:
@@ -58,10 +64,12 @@ With keen analysis and practical steps for applying it at your own company—no 
 
 Working Backwards is a practical guidebook and a corporate narrative, filled with the authors’ in-the-room recollections of what “Being Amazonian” is like and how it has affected their personal and professional lives. They demonstrate that success on Amazon’s scale is not achieved by the genius of any single leader, but rather through commitment to and execution of a set of well-defined, rigorously-executed principles and practices—shared here for the very first time.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/53138083)
+[Goodreads](https://www.goodreads.com/en/book/show/53138083)
 
 
-### **5. Measure What Matters** - _by John Doerr_
+### 5. Measure What Matters
+_by John Doerr_
+
 ![Cover Image](https://media.licdn.com/dms/image/C5612AQE-brUxbqmCug/article-cover_image-shrink_600_2000/0/1606340853336?e=2147483647&v=beta&t=hVB7K9J2AATVY9XxiL-OPR65MaYYFw4WeZxBw-oqAyI)
 
 ###### Abstract:
@@ -78,9 +86,11 @@ In Measure What Matters, Doerr shares a broad range of first-person, behind-the-
 
 This book will show you how to collect timely, relevant data to track progress - to measure what matters. It will help any organization or team aim high, move fast, and excel.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/39286958)
+[Goodreads](https://www.goodreads.com/en/book/show/39286958)
 
-### **6. The Hard Thing About Hard Things** - _by Ben Horowitz_
+### 6. The Hard Thing About Hard Things
+_by Ben Horowitz_
+
 ![Cover Image](https://www.karthikchidambaram.com/wp-content/uploads/2017/08/blog-image.png)
 
 ###### Abstract:
@@ -94,9 +104,11 @@ if it's OK to hire people from your friend's company; how to manage your own psy
 
 Filled with Horowitz's trademark humor and straight talk, and drawing from his personal and often humbling experiences, The Hard Thing About Hard Things is invaluable for veteran entrepreneurs as well as those aspiring to their own new ventures.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)
+[Goodreads](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things)
 
-### **7. The Mom Test**: How to talk to customers & learn if your business is a good idea when everyone is lying to you - _by Rob Fitzpatrick_
+### 7. The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you
+_by Rob Fitzpatrick_
+
 ![Cover Image](https://media.licdn.com/dms/image/sync/D5627AQGJ1Xiepgdfng/articleshare-shrink_800/0/1704211710710?e=2147483647&v=beta&t=vdxxZAFflU2DvWGxPiq-erN8u9JfZFAbVwOTZ6miZ3o)
 
 ###### Abstract:
@@ -106,54 +118,55 @@ They say you shouldn't ask your mom whether your business is a good idea, becaus
 
 Talking to customers is one of the foundational skills of both Customer Development and Lean Startup. We all know we're supposed to do it, but nobody seems willing to admit that it's easy to screw up and hard to do right. This book is going to show you how customer conversations go wrong and how you can do better.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/52283963)
+[Goodreads](https://www.goodreads.com/en/book/show/52283963)
 
 
-### **8. When Coffee & Kale Compete** - _by Alan Klement_
+### 8. When Coffee & Kale Compete
+_by Alan Klement_
+
 ![Cover Image](https://assets-global.website-files.com/5f5f533c8d54b354352d1a27/612e4e5d353f6f7da856f0ee_webflow-75236c26388ee62295384e4d5d776f3a-bwlbstxp.jpeg)
 
 ###### Abstract:
 A Job to be Done is the process a consumer goes through whenever she aims to transform her existing life-situation into a preferred one, but cannot because there are constraints that stop her. When Coffee and Kale Compete by Alan Klement helps you become better at creating and selling products that people will buy. Your joy at work will grow. You will know how to help companies increase profits, reduce waste, and remain competitive. In doing so, you will help economies prosper, and help provide stable jobs for employees and the families that depend on them. Top entrepreneurs, business owners, and Alan himself share their experiences of how they used Job to be Done to help them create successful products. Alan not only relates success stories but also gives examples of products and companies that failed. The experiences of others will help you make the best choices for your own company or the company where you work. You will also learn how to analyze the competition and make customers notice your product. The knowledge in this book will help you boost growth for your product and business.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/32493686)
+[Goodreads](https://www.goodreads.com/en/book/show/32493686)
 
 
-### **9. Decode and Conquer** - _by Lewis C. Lin_
+### 9. Decode and Conquer
+_by Lewis C. Lin_
+
 ![Cover Image](https://i.ytimg.com/vi/sisKNjXqRI8/maxresdefault.jpg)
 
 ###### Abstract:
 This is the 3rd edition of the classic product management (PM) interview prep book, Decode and Conquer . Written by an expert on PM interviews, Decode and Conquer is your starting point on how to conquer the most difficult PM interview questions . Here's what to 
 
-✔️ Frameworks for design and metrics questions including the famous CIRCLES Method™, AARM Method™, and DIGS Method™
+- Frameworks for design and metrics questions including the famous CIRCLES Method™, AARM Method™, and DIGS Method™
+- Biggest mistakes PM candidates make at the interview and how to avoid them
+- Insider tips on just what interviewers are looking for and how to answer so they can't say NO to hiring you
+- Sample answers for important PM interview questions The 3rd edition has an expanded section on metrics & execution questions. Empower yourself with the latest thinking, frameworks, and tips to cover this growing category of questions! 
+- Design a new iPad app for Google Spreadsheet.
+- Brainstorm as many algorithms as possible for recommending Twitter followers.
+- You're the CEO of the Yellow Cab taxi service. How do you respond to Uber?
+- You're part of the Google Search web spam team. How would you detect duplicate websites? Decode and Conquer , especially CIRCLES™, has been endorsed by recruiters and top publications such as Business Insider .
 
-✔️ Biggest mistakes PM candidates make at the interview and how to avoid them
-
-✔️ Insider tips on just what interviewers are looking for and how to answer so they can't say NO to hiring you
-
-✔️ Sample answers for important PM interview questions The 3rd edition has an expanded section on metrics & execution questions. Empower yourself with the latest thinking, frameworks, and tips to cover this growing category of questions! 
-
-✔️ Design a new iPad app for Google Spreadsheet.
-
-✔️ Brainstorm as many algorithms as possible for recommending Twitter followers.
-
-✔️ You're the CEO of the Yellow Cab taxi service. How do you respond to Uber?
-
-✔️ You're part of the Google Search web spam team. How would you detect duplicate websites? Decode and Conquer , especially CIRCLES™, has been endorsed by recruiters and top publications such as Business Insider .
-
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/book/show/48665024-decode-and-conquer)
+[Goodreads](https://www.goodreads.com/book/show/48665024-decode-and-conquer)
 
 
-### **10. Crossing the Chasm**: Marketing and Selling High-Tech Products to Mainstream Customers - _by Geoffrey A. Moore_
-![Cover Image](https://d2r68eeixpqexd.cloudfront.net/8f2c96ebfe4a534862a76eb533c8c27a.jpg)
+### 10. Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers
+_by Geoffrey A. Moore_
+
+![Cover Image](https://media.licdn.com/dms/image/C5612AQGYnbhd4lO0Tg/article-cover_image-shrink_720_1280/0/1626065572986?e=2147483647&v=beta&t=ND6FH9966YwCSQF174TkRCXdV8RRZaklUuxv20KGqAA)
 ![Concept Illustration](https://www.legalevolution.org/wp-content/uploads/sites/262/2017/09/hype-cycle-crossing-the-chasm-v5.png)
 
 ###### Abstract:
 Here is the bestselling guide that created a new game plan for marketing in high-tech industries. Crossing the Chasm has become the bible for bringing cutting-edge products to progressively larger markets. This edition provides new insights into the realities of high-tech marketing, with special emphasis on the Internet. It's essential reading for anyone with a stake in the world's most exciting marketplace.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/61329)
+[Goodreads](https://www.goodreads.com/en/book/show/61329)
 
 
-### **11. The Lean Product Playbook** - by Dan Olsen
+### 11. The Lean Product Playbook
+_by Dan Olsen_
+
 ![Cover Image](https://i.ytimg.com/vi/DlPNhjwdWcI/maxresdefault.jpg)
 
 ###### Abstract:
@@ -169,16 +182,18 @@ Determine your target customers Identify underserved customer needs Create a win
 
 Entrepreneurs, executives, product managers, designers, developers, marketers, analysts and anyone who is passionate about building great products will find The Lean Product Playbook an indispensable, hands-on resource.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/25374501)
+[Goodreads](https://www.goodreads.com/en/book/show/25374501)
 
 
-### **12. The Making of a Manager** - by Julie Zhuo
+### 12. The Making of a Manager
+_by Julie Zhuo_
+
 ![Cover Image](https://media.licdn.com/dms/image/C4E12AQE2w5_IfiOiYQ/article-cover_image-shrink_720_1280/0/1574842740132?e=2147483647&v=beta&t=QwU2ClvTKYltxb5GJvCh4V-VL71DnMu34v8ubr3xEw4)
 
 ###### Abstract:
 Congratulations, you're a manager! After you pop the champagne, accept the shiny new title, and step into this thrilling next chapter of your career, the truth descends like a fog: you don't really know what you're doing.
 
-That's exactly how Julie Zhuo felt when she became a rookie manager at the age of 25. She stared at a long list of logistics--from hiring to firing, from meeting to messaging, from planning to pitching--and faced a thousand questions and uncertainties. How was she supposed to spin teamwork into value? How could she be a good steward of her reports' careers? What was the secret to leading with confidence in new and unexpected situations?
+That's exactly how Julie Zhuo felt when she became a rookie manager at the age of 25. She stared at a long list of logistics -- from hiring to firing, from meeting to messaging, from planning to pitching -- and faced a thousand questions and uncertainties. How was she supposed to spin teamwork into value? How could she be a good steward of her reports' careers? What was the secret to leading with confidence in new and unexpected situations?
 
 Now, having managed dozens of teams spanning tens to hundreds of people, Julie knows the most important lesson of all: great managers are made, not born. If you care enough to be reading this, then you care enough to be a great manager.
 
@@ -191,19 +206,20 @@ The Making of a Manager is a modern field guide packed everyday examples and tra
 
 Whether you're new to the job, a veteran leader, or looking to be promoted, this is the handbook you need to be the kind of manager you wish you had.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/38821039)
+[Goodreads](https://www.goodreads.com/en/book/show/38821039)
 
 
-### **13. Product Manager’s Sacred Seven** - _by Neel Mehta, Aditya Agashe, and Parth Detroja_
+### 13. Product Manager’s Sacred Seven
+_by Neel Mehta, Aditya Agashe, and Parth Detroja_
+
 ![Cover Image](https://media.licdn.com/dms/image/C4D12AQHXfkSDsDRQwg/article-cover_image-shrink_600_2000/0/1626717796749?e=2147483647&v=beta&t=YhE9UIlI-saS0yiGk_jMylT_A63-e83J1-x0i6DrFQI)
 
 ###### Abstract:
 Authored by 3 Product Managers at Facebook, Google, and Microsoft, Product Management’s Sacred Seven is a comprehensive resource that will teach you the must-know knowledge and applied skills necessary to become a world-class PM that can get hired anywhere.
 
 In writing this book, we interviewed 67 product leads and hiring managers from 52 top companies around the world. They ranged from all the usual FAANG suspects to darling unicorns such as Coinbase, TikTok, and Grab. We asked everyone two simple questions:
-- *What knowledge separates interview candidates you hire from those you don't?
-
-- *What hard skills help PMs advance their careers the fastest?
+1. What knowledge separates interview candidates you hire from those you don't?
+2. What hard skills help PMs advance their careers the fastest?
 
 Given that we talked to product leaders across the world who worked in various different countries and industries, we expected to see no clear pattern in our responses. We were shocked to find a common theme across all of our interviews. The knowledge and skills which separated exceptional PMs from the rest all boiled down to seven subjects: product design, economics, psychology, user experience, data science, law & policy, and marketing & growth.
 
@@ -217,28 +233,32 @@ Featured Companies: Google, Facebook, Microsoft, Amazon, TikTok, Snapchat, Apple
 
 Read Sacred Seven today to ace your PM interviews and become a better product leader!
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/55025971)
+[Goodreads](https://www.goodreads.com/en/book/show/55025971)
 
 
-### **14. The Product Book**: How to Become a Great Product Manager - by Josh Anon & Carlos Gonzalez
+### 14. The Product Book: How to Become a Great Product Manager
+_by Josh Anon & Carlos Gonzalez_
+
 ![Cover Image](https://miro.medium.com/v2/resize:fit:1200/1*p-_R7uLr2pBS1ybk_C6amg.jpeg)
 
 ###### Abstract:
 "No one asked you to show up." Every experienced product manager has heard some version of those words at some point in their career. Think about a company. Engineers build the product. Designers make sure it has a great user experience and looks good. Marketing makes sure customers know about the product. Sales get potential customers to open their wallets to buy the product. What more does a company need? What does a product manager do? Based upon Product School’s curriculum, which has helped thousands of students become great product managers, The Product Book answers that question. Filled with practical advice, best practices, and expert tips, this book is here to help you succeed! Product School offers product management classes taught by real-world product managers, working at renowned tech companies like Google, Facebook, Snapchat, Airbnb, LinkedIn, PayPal, Netflix and more. The classes are designed to fit into your work schedule, and the campuses are conveniently located in Silicon Valley, San Francisco, Los Angeles and New York.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/35274263)
+[Goodreads](https://www.goodreads.com/en/book/show/35274263)
 
-### **15. Actionable Gamification:** Beyond Points, Badges, and Leaderboards - by Yu-Kai Chou
+### 15. Actionable Gamification: Beyond Points, Badges, and Leaderboards
+_by Yu-Kai Chou_
 ![Cover Image](https://media.licdn.com/dms/image/D4E22AQEcShLtQxShpA/feedshare-shrink_800/0/1691234906813?e=2147483647&v=beta&t=QqVRnaoz5TCToqeSJwXLNoUHkkSnURcSa082vtOCJGY)
 ![Octalysis Framework](https://miro.medium.com/v2/resize:fit:1400/1*bYnz9tGm_jBZaqfYYgGmXA.png)
 
 ###### Abstract:
 The new era of Gamification and Human-Focused Design optimizes for motivation and engagement over traditional Function-Focused Design. Within the industry, studies on game mechanics and behavioral psychology have become proliferate. However, few people understand how to merge the two fields into experience designs that reliably increases business metrics and generates a return on investment. Gamification Pioneer Yu-kai Chou takes reader on a journey to learn his twelve years of obsessive research in creating the Octalysis Framework, and how to apply the framework to create engaging and successful experiences in their product, workplace, marketing, and personal lives. Effective gamification is a combination of game design, game dynamics, behavioral economics, motivational psychology, UX/UI (User Experience and User Interface), neurobiology, technology platforms, as well as ROI-driving business implementations. This book explores the interplay between these disciplines to capture the core principles that contribute to good gamification design. The goal for this book is to become a strategy guide to help readers master the games that truly make a difference in their lives. Readers who absorb the contents of this book will have literally obtained what many companies pay tens of thousands of dollars to acquire. The ultimate aim is to enable the widespread adoption of good gamification and human-focused design in all types of industries.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/book/show/25416321-actionable-gamification)
+[Goodreads](https://www.goodreads.com/book/show/25416321-actionable-gamification)
 
 
-### **16. Hooked**: How to Build Habit-Forming Products - by Nir Eyal with Ryan Hoover
+### 16. Hooked: How to Build Habit-Forming Products
+_by Nir Eyal with Ryan Hoover_
 ![Cover Image](https://media.licdn.com/dms/image/C5612AQHg4EHvbReqBQ/article-cover_image-shrink_720_1280/0/1644448550716?e=2147483647&v=beta&t=W4jM1K5QXh5uL_G-2povV47SA8c8Zk8mvfTDOkTCrjs)
 
 ###### Abstract:
@@ -251,12 +271,11 @@ Hooked is based on Eyal’s years of research, consulting, and practical experie
 
 
 Eyal provides readers with:
-• Practical insights to create user habits that stick.
-• Actionable steps for building products people love.
-• Fascinating examples from the iPhone to Twitter, Pinterest to the Bible App, and many other habit-forming products.
+- Practical insights to create user habits that stick.
+- Actionable steps for building products people love.
+- Fascinating examples from the iPhone to Twitter, Pinterest to the Bible App, and many other habit-forming products.
 
-[👉 <ins>Goodreads Link </ins>](https://www.goodreads.com/en/book/show/22668729)
-
+[Goodreads](https://www.goodreads.com/en/book/show/22668729)
 
 
 ---
@@ -279,4 +298,3 @@ Eyal provides readers with:
 - [https://podcasts.apple.com/us/podcast/product-momentum-podcast/id1354608616](https://podcasts.apple.com/us/podcast/product-momentum-podcast/id1354608616)
 - [https://featureflux.com/blog/20-product-management-podcasts](https://featureflux.com/blog/20-product-management-podcasts)
 - [https://www.svpg.com/](https://www.svpg.com/)
-- 

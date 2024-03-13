@@ -8,6 +8,21 @@ cover_image: ../videos/video2.mp4
 
 Welcome to the **Ultimate Markdown Test Blog Post**! This post is designed to push the limits of markdown formatting and test the rendering capabilities of your compiler. Let's dive into the various cases and see how well your compiler handles them.
 
+
+## youtube video embeds
+<embed src="https://www.youtube.com/embed/nlDT0kmNnLg"></embed>
+
+## Webpage emebeds
+<embed src="https://en.wikipedia.org/wiki/Special:Random"></embed>
+
+
+## A foldable accordian
+<details>
+  <summary>Click to expand/collapse</summary>
+
+  Content inside the foldable section...
+</details>
+
 ## Headings with Inline Formatting
 
 # Heading 1 *with italic text* and **bold text**

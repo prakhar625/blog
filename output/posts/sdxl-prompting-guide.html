@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Practical Guide to writing prompts for Stable Diffusion</title>
+  <title>A Short Guide to Image Prompting for Stable Diffusion 1.5</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -30,20 +30,24 @@
     <div class="cover-media">
       
       
-      <img src="../images/george-webster-p1VZ5IbT2Tg-unsplash.jpg" alt="Cover Image">
+      <img src="../images/image-prompting.jpeg" alt="Cover Image">
       
     </div>
     
     <article>
-      <h1 class="post-title">A Practical Guide to writing prompts for Stable Diffusion</h1>
+      <h1 class="post-title">A Short Guide to Image Prompting for Stable Diffusion 1.5</h1>
       <p class="post-subtitle">Published on 2023-07-10</p>
       <hr class="post-content-header-divider"/>
       <div class="post-content">
         <h1>Core Tech Concepts and Context</h1>
-<p>Generative AI has evolved quickly into quite a big universe of it's own. You might have seen a lot of videos or articles with how interesting and cool the tech is or the quality of output images that people are able to generate. It's quite mesmerising to say the least. I was in the same place, and wanted to create a single place to house all the info, so that it can work as a documentation wiki of sorts for myself, and if it can help any other person along the way to learn more about it, feel free to read along and use this guide.</p><p>In case you have any feedback / spot some issues with the guide - feel free to reach out to me at : prakhar625 [at] google [dot] com via a simple mail. Please mention a link and the issue and I will try to resolve it as soon as possible.</p><p>Let's start.</p><h2>Diffusion Models - The core technology</h2>
+<p>Generative AI has evolved quickly into quite a big universe of it's own. You might have seen a lot of videos or articles with how interesting and cool the tech is or the quality of output images that people are able to generate. It's quite mesmerising to say the least. I was in the same place, and wanted to create a single place to house all the info, so that it can work as a documentation wiki of sorts for myself, and if it can help any other person along the way to learn more about it, feel free to read along and use this guide.</p><p>Let's start.</p><h2>1. Diffusion Models</h2>
 <p>In machine learning, diffusion models are class of latent variable models that are trained to denoise images blurred with Gaussian Noise, by learning to reverse diffusion process.</p><p><strong>What's the diffusion process?</strong>
-<img src="https://miro.medium.com/v2/resize:fit:1400/1*xc2Y6jwIUhfEGxJLytU1RA.png" alt="Diffusion Process"></p><p>Let's go back to the high-school days and remember the diffusion process that occurs in any solution. Ions / particles from a high concentration naturally move from a place of higher concentration to a place of lower concentration by default (2nd law of thermodynamics).</p><p>Now you can think of a reverse process in place, where you start with the most random and homogeneous state and and create a more ordered and structured state from there. These diffuser models are prcisely trained to do this job - in the visual space. This is a very high-level and not-so-correct explaination of the process, hence take it with a pound of salt and read more about it to learn the precise technical aspects of it. Maybe start <a href="https://en.wikipedia.org/wiki/Diffusion_model">here on wikipedia</a>.</p><h2>Noise</h2>
-<p>You might have heard about a concept called Signal vs Noise. In a very crude way - Signal is the set of data-set that is important for the problem/context and noise is just the other non-important set of data.</p><p>In the context of image processing / computer graphics domain, there are a lot of algorithms that can be used to generate random noises in 2D space. Every point in this 2D space corresponds to a pixel. Each pixel can be assumed as a vector/array/matrix (depending upon where-ever the color range is grayscale or RGB color space). Let's assume grayscale for simplicity and simple values of that range from 0 to 1 (0 for pure black and 1 for pure white - again for assumption). Now an algorithm is given a job to come up with values for each of these points, between 1 and 0, so that the final output is as random as possible, when analysed at various block sizes.</p><p>All algos have their cons and pros, and more can be read about them to know more about them. Some common examples are - <a href="https://en.wikipedia.org/wiki/Simplex_noise">Simplex Noise</a>, <a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin Noise</a>, <a href="https://en.wikipedia.org/wiki/Gaussian_noise">Gaussian Noise</a> that I know of. They are very important and used heavily in game dev industry, special effects industry, any kind of procedural generation context and as mentioned above - in the Image Generation ML context.</p><h3>Related topics</h3>
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*xc2Y6jwIUhfEGxJLytU1RA.png" alt="Diffusion Process"></p><p>Let's go back to the high-school days and remember the diffusion process that occurs in any solution. Ions / particles from a high concentration naturally move from a place of higher concentration to a place of lower concentration by default (2nd law of thermodynamics).</p><p>Now you can think of a reverse process in place, where you start with the most random and homogeneous state and and create a more ordered and structured state from there. These diffuser models are prcisely trained to do this job - in the visual space. This is a very high-level and not-so-correct explaination of the process, hence take it with a pound of salt and read more about it to learn the precise technical aspects of it. Maybe start <a href="https://en.wikipedia.org/wiki/Diffusion_model">here on wikipedia</a>.</p><h2>2. Noise</h2>
+<p><figure><img src="../images/noise.png" alt="Noise"><figcaption>Credits https://graphics.cs.kuleuven.be/publications/LLCDDELPZ10STARPNF/</figcaption></figure>
+</p><p>You might have heard about a concept called Signal vs Noise. In a very crude way - Signal is the set of data-set that is important for the problem/context and noise is just the other non-important set of data.</p><p>In the context of image processing / computer graphics domain, there are a lot of algorithms that can be used to generate random noises in 2D space. Every point in this 2D space corresponds to a pixel. Each pixel can be assumed as a vector/array/matrix (depending upon where-ever the color range is grayscale or RGB color space). Let's assume grayscale for simplicity and simple values of that range from 0 to 1 (0 for pure black and 1 for pure white - again for assumption). Now an algorithm is given a job to come up with values for each of these points, between 1 and 0, so that the final output is as random as possible, when analysed at various block sizes.</p><p>All algos have their cons and pros, and more can be read about them to know more about them. Some common examples are - <a href="https://en.wikipedia.org/wiki/Simplex_noise">Simplex Noise</a>, <a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin Noise</a>, <a href="https://en.wikipedia.org/wiki/Gaussian_noise">Gaussian Noise</a> that I know of. They are very important and used heavily in game dev industry, special effects industry, any kind of procedural generation context and as mentioned above - in the Image Generation ML context.</p><h2>3. Latent Space</h2>
+<p><img src="../images/pendulum_ls.gif" alt="Latent Space"></p><p>Latent Space is an abstract, lower-dimensional representation of high-dimensional data, often used in machine learning and data science to simplify complex data structures and reveal hidden patterns. It is particularly useful in unsupervised learning techniques, such as dimensionality reduction, clustering, and generative modeling. By transforming data into a latent space, data scientists can more efficiently analyze, visualize, and manipulate the data, leading to improved model performance and interpretability.</p><p>In the context of machine learning, latent space refers to a lower-dimensional space where the essential features of the original high-dimensional data are preserved. The term “latent” implies that the space captures the underlying structure or hidden relationships within the data. Latent spaces are often used to reduce the complexity of data, making it easier to work with and understand.</p><p><figure><img src="../images/latent-space-1.webp" alt="Latent Space Representation"><figcaption>Depiction of convolutional neural network. Source: Source: Hackernoon Latent Space Visualization.</figcaption></figure>
+</p><p>There are several methods for constructing latent spaces, including linear and nonlinear dimensionality reduction techniques, such as Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE), and autoencoders. These methods aim to find a lower-dimensional representation of the data that retains as much of the original information as possible.</p><p>Generative models, such as Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs), learn to generate new data samples by modeling the latent space of the training data. These models can generate realistic and diverse samples by sampling from the learned latent space.</p><p>Latent spaces can be used to extract meaningful features from raw data, which can then be used as input for other machine learning models. Autoencoders, for example, can learn a compressed representation of the input data in the latent space, which can then be used for tasks like classification or regression.</p><p>Visualizing high-dimensional data can be challenging, but by projecting the data into a lower-dimensional latent space, it becomes easier to explore and interpret. Techniques like PCA and t-SNE are commonly used to create 2D or 3D visualizations of complex data.</p><p><figure><img src="../images/latent-space-2.png" alt="3D Representation of Swiss Roll vs. 2D Representation of same data. Example from https://datascience.stackexchange.com/a/5698"><figcaption>3D Representation of Swiss Roll vs. 2D Representation of same data. Example from https://datascience.stackexchange.com/a/5698</figcaption></figure>
+</p><p>For Deeper Understanding read <a href="https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d">this article</a></p><h3>Related topics</h3>
 <ul>
 <li><p><a href="https://en.wikipedia.org/wiki/Noise_reduction#In_images">Noise Reduction</a></p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Total_variation_denoising">Denoising</a></p></li>
@@ -60,49 +64,116 @@
 <hr>
 <h1>Tools of the trade</h1>
 <p>Okay, so now that we know about the tech and the common terms that are thrown around, we might ask where to start?</p><p>If you quickly google, you might end up with a bunch of platforms and services that offer you to explore the stuff. Some are intricate while are productized to make them easy to use. Some might be focused on a particular style, while others are gneralized but seem hard to use.</p><p>As far as I've understood it, there are three main players in this market, and each of them have their own set of cons and pros.</p><h2>Stable Diffusion</h2>
-<p>If you check out their <a href="https://en.wikipedia.org/wiki/Stable_Diffusion">wikipedia page</a>, you can see that it's an open-source model that was initially started by Runway, CompVis and Stability AI orgs and is currently developed and maintained by Stability AI.</p><p><strong>Benefits</strong>:</p><ul>
-<li><p>It's open source</p></li>
-<li><p>Can be self-hosted.</p></li>
-<li><p>Large active community</p></li>
-<li><p>Highly controllable</p></li>
-<li><p>Customisable</p></li>
-<li><p>Free to use (on your own hardware)</p></li>
-<li><p>Personally the quality out output is very high right now, if the customisations are done properly.</p></li>
-</ul>
-<p><strong>Issues</strong>:</p><ul>
-<li><p>Not an out of the box solution. Although Stability AI provides a basic version via Dreambooth.</p></li>
-<li><p>Setup might seem a little complex</p></li>
-<li><p>Community stuff is flooded with NSFW content/modifications</p></li>
-<li><p>Workflows with high yield, might become complex and reduce transferability</p></li>
-</ul>
-<img src="https://www.jousefmurad.com/content/images/2022/10/316b0d3b-591e-455f-b721-beaba73d0a0a_2400x1100.png" alt="Some 3rd party sourced outputs, made on Stable Diffusion"> <img src="https://www.assemblyai.com/blog/content/images/2022/12/comp_small.png" alt="Some out of the box, 3rd party sourced, outputs tested on the 2 public models of SD"><h2>Midjourney</h2>
-<p>A closed source program/api that is developed and maintained by SF based private corp called Midjourney, Inc.</p><ul>
-<li><p>Paid</p></li>
-<li><p>Closed-source</p></li>
-<li><p>Very High Quality</p></li>
-<li><p>Diverse range of outputs are possible (initially it was good at non-real content, but recently the photo-realism has become amazing)</p></li>
-<li><p>Non-customisable /Mod-able</p></li>
-<li><p>Large active user-base</p></li>
-<li><p>The dev team is highly responsive and works with lot of user-feedback for model enhancement and feature development both.</p></li>
-<li><p>Non-controllable</p></li>
-</ul>
-<img src="https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/3/7/2/0/1/9/5/News-Aufmacher-68943a9c69164211.jpeg?force_format=avif,webp,jpeg&org_if_sml=1&q=70&width=1019" alt="3rd party, outputs generated via Midjourney, comparing the v4 and v5 versions"><h2>DALL·E 2</h2>
-<p>A closed source program/api that is developed and maintained by the private corp - Open AI.</p><ul>
-<li><p>Paid</p></li>
-<li><p>Closed-source</p></li>
-<li><p>Mid-High Quality output</p></li>
-<li><p>Limited range of outputs (good in photo-realism, but face-generation is messed up out of the box)</p></li>
-<li><p>Non-customisable /Mod-able</p></li>
-<li><p>Large active user-base</p></li>
-<li><p>The dev team is highly responsive and works with lot of user-feedback for model enhancement and feature development both.</p></li>
-<li><p>Non-controllable</p></li>
-</ul>
-<img src="https://www.dpreview.com/files/p/articles/7603049074/dall-e-1-vs-2-fox.jpeg" alt="3rd party, output testing of v1 and v2 of Dalle"> <img src="https://jumpstory.com/wp-content/uploads/2022/07/dalle2-generated.jpg" alt="Some more, 3rd party content, made from Dalle"> <img src="https://images.squarespace-cdn.com/content/v1/5b549cf4b27e39707a5804a7/e69204bf-718a-4a59-aad2-25e236d4c568/ML_DALLE_Wimmelbild_3.jpg" alt="more dalle2 stuff"> <img src="https://pbs.twimg.com/media/FUoEFP0WUAAb_2R.jpg" alt="cybertronic panda, made on dalle2"><p>Based on your choice, requirements, and context of application you can use the platform of your choice. Remember that any other service/app/website that you might encounter apart from these - most probably will be using one/mix of these three AFAIK.</p><p>Dalle and Midjourney will use your input data for their further model training for sure. If you are using on-prem/local version of Stable diffusion, you know it's not going anywhere. So if your use-case requires your to not share the image data, you cannot use the former 2 options.</p><p>On the other hand, if you don't wanna get into complex workflow, won't mind shelling some US$10-US$30 per month and have no data-protection reasons, you can pick Dalle or Midjourney.</p><p>I personally am getting gravitating towards Stable diffusion these days for a few reasons:</p><ul>
+<p><img src="https://www.jousefmurad.com/content/images/2022/10/316b0d3b-591e-455f-b721-beaba73d0a0a_2400x1100.png" alt="Some 3rd party sourced outputs, made on Stable Diffusion"></p><p>If you check out their <a href="https://en.wikipedia.org/wiki/Stable_Diffusion">wikipedia page</a>, you can see that it's an open-source model that was initially started by Runway, CompVis and Stability AI orgs and is currently developed and maintained by Stability AI.</p><table>
+<thead>
+<tr>
+<th>Benefits</th>
+<th>Issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>It's open source</td>
+<td>Not an out of the box solution.</td>
+</tr>
+<tr>
+<td>Can be self-hosted.</td>
+<td>Setup might seem a little complex</td>
+</tr>
+<tr>
+<td>Large active community</td>
+<td>Community stuff is flooded with NSFW content/modifications</td>
+</tr>
+<tr>
+<td>Controllable &amp; Customisable</td>
+<td>Workflows with high yield, might become complex and reduce transferability</td>
+</tr>
+<tr>
+<td>Free to use (on your own hardware)</td>
+<td></td>
+</tr>
+<tr>
+<td>Personally the quality out output is very high right now, if the customisations are done properly.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.assemblyai.com/blog/content/images/2022/12/comp_small.png" alt=""></p><h2>Midjourney</h2>
+<p><img src="https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/3/7/2/0/1/9/5/News-Aufmacher-68943a9c69164211.jpeg?force_format=avif,webp,jpeg&org_if_sml=1&q=70&width=1019" alt="3rd party, outputs generated via Midjourney, comparing the v4 and v5 versions"></p><p>A closed source product, developed and maintained by SF based private corp called Midjourney, Inc.</p><table>
+<thead>
+<tr>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paid</td>
+</tr>
+<tr>
+<td>Closed-source</td>
+</tr>
+<tr>
+<td>Very High Quality</td>
+</tr>
+<tr>
+<td>Diverse range of outputs</td>
+</tr>
+<tr>
+<td>Non-customisable /Mod-able</td>
+</tr>
+<tr>
+<td>Large active user-base</td>
+</tr>
+<tr>
+<td>Responsive &amp; active dev team</td>
+</tr>
+<tr>
+<td>Limited Controllability</td>
+</tr>
+</tbody>
+</table>
+<h2>DALL·E 2</h2>
+<p><img src="https://images.squarespace-cdn.com/content/v1/5b549cf4b27e39707a5804a7/e69204bf-718a-4a59-aad2-25e236d4c568/ML_DALLE_Wimmelbild_3.jpg" alt="more dalle2 stuff"></p><p>A closed source program &amp; api that is developed and maintained by the private corp - Open AI.</p><table>
+<thead>
+<tr>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paid</td>
+</tr>
+<tr>
+<td>Closed-source</td>
+</tr>
+<tr>
+<td>Mid-High Quality output</td>
+</tr>
+<tr>
+<td>Limited range of outputs (good in photo-realism, but face-generation is messed up out of the box)</td>
+</tr>
+<tr>
+<td>Non-customisable /Mod-able</td>
+</tr>
+<tr>
+<td>Large active user-base</td>
+</tr>
+<tr>
+<td>The dev team is highly responsive and works with lot of user-feedback for model enhancement and feature development both.</td>
+</tr>
+<tr>
+<td>Non-controllable</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.dpreview.com/files/p/articles/7603049074/dall-e-1-vs-2-fox.jpeg" alt="3rd party, output testing of v1 and v2 of Dalle"> 
+<img src="https://jumpstory.com/wp-content/uploads/2022/07/dalle2-generated.jpg" alt="Some more, 3rd party content, made from Dalle"> 
+<img src="https://pbs.twimg.com/media/FUoEFP0WUAAb_2R.jpg" alt="cybertronic panda, made on dalle2"></p><p>Based on your choice, requirements, and context of application you can use the platform of your choice. Remember that any other service/app/website that you might encounter apart from these - most probably will be using one/mix of these three AFAIK.</p><p>Dalle and Midjourney will use your input data for their further model training for sure. If you are using on-prem/local version of Stable diffusion, you know it's not going anywhere. So if your use-case requires your to not share the image data, you cannot use the former 2 options.</p><p>On the other hand, if you don't wanna get into complex workflow, won't mind shelling some US$10-US$30 per month and have no data-protection reasons, you can pick Dalle or Midjourney.</p><p>I personally am getting gravitating towards Stable diffusion these days for a few reasons:</p><ul>
 <li><p>It's Free, so I can experiment as much as I want and won't have to worry about the cost.</p></li>
 <li><p>High Control, I can use various mods / extensions developed by the amazing community and learn to achieve higher order of determinism in order to achieve what I want</p></li>
 </ul>
-<h2><a href="https://www.adobe.com/sensei/generative-ai/firefly.html">Adobe Firefly</a></h2>
-<p>Personally, I won't keep it at the same level as the other three platforms mentioned above, but it is an independent platforms with quite powerful features - so definitely worth knowing about. Developed by Adobe, it is quite easy to use, since it's integrated deeply and must say very well into the creative cloud suite. So if you are already an Adbe Creative Cloud customer, you would just love how easy it is to use and become hyper-productive. I personally haven't explored it much yet to develop an opinion, and would expand my thoughts here when I am done checking it out properly.</p><p>But still, prima facie, the CC membership might be a huge cost for people who are not-already subscribed. Additionaly, being closed-source, it comes with the same set of limitations as mentioned above. But from that I've seen around - it seems fast and pretty decent - pretty good in terms of quality of output yet. So you might want to check it out and see for yourself if it works out for you.</p><img src="https://imageio.forbes.com/specials-images/imageserve/648106d152991c4a1930c0ae/Adobe-Firefly-Illo/0x0.png?format=png&width=960" alt="AF Sample 1"> <img src="https://jkost.com/blog/wp-content/uploads/2024/03/Firefly_FI.jpg" alt="AF Sample 2"><h4>Further Readings</h4>
+<h2>Adobe Firefly</h2>
+<p><img src="https://imageio.forbes.com/specials-images/imageserve/648106d152991c4a1930c0ae/Adobe-Firefly-Illo/0x0.png?format=png&width=960" alt="AF Sample 1"></p><p>Personally, I won't keep it at the same level as the other three platforms mentioned above, but it is an independent platforms with quite powerful features - so definitely worth knowing about. Developed by Adobe, it is quite easy to use, since it's integrated deeply and must say very well into the creative cloud suite. So if you are already an Adbe Creative Cloud customer, you would just love how easy it is to use and become hyper-productive. I personally haven't explored it much yet to develop an opinion, and would expand my thoughts here when I am done checking it out properly.</p><p>But still, prima facie, the CC membership might be a huge cost for people who are not-already subscribed. Additionaly, being closed-source, it comes with the same set of limitations as mentioned above. But from that I've seen around - it seems fast and pretty decent - pretty good in terms of quality of output yet. So you might want to check it out and see for yourself if it works out for you.</p><p><img src="https://jkost.com/blog/wp-content/uploads/2024/03/Firefly_FI.jpg" alt="AF Sample 2"></p><h4>Further Readings</h4>
 <ul>
 <li><p><a href="https://towardsdatascience.com/dall-e-2-explained-the-promise-and-limitations-of-a-revolutionary-ai-3faf691be220">https://towardsdatascience.com/dall-e-2-explained-the-promise-and-limitations-of-a-revolutionary-ai-3faf691be220</a></p></li>
 <li><p><a href="https://www.assemblyai.com/blog/how-dall-e-2-actually-works/">https://www.assemblyai.com/blog/how-dall-e-2-actually-works/</a></p></li>
