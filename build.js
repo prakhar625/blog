@@ -29,7 +29,7 @@ md.renderer.rules.image = (tokens, idx, options, env, self) => {
 
   if (src.startsWith("../videos/")) {
     const type = "video/" + path.extname(src).slice(1);
-    mediaElement = `<video controls><source src="${src}" type="${type}"></video>`;
+    mediaElement = `<video controls autoplay loop muted playsinline><source src="${src}" type="${type}"></video>`;
   } else if (src.startsWith("../audio/")) {
     const type = "audio/" + path.extname(src).slice(1);
     mediaElement = `<audio controls><source src="${src}" type="${type}"></audio>`;
@@ -68,6 +68,20 @@ md.renderer.rules.paragraph_close = (tokens, idx, options, env, self) => {
   }
 
   return "</p>";
+};
+
+md.renderer.rules.list_item_open = function (tokens, idx, options, env, self) {
+  const token = tokens[idx];
+  const taskListItem = token.attrGet("class") === "task-list-item";
+  const checked = token.attrGet("checked") === "true";
+
+  if (taskListItem) {
+    const checkbox = checked ? "✅" : "☐";
+    const textDecoration = checked ? "text-decoration: line-through;" : "";
+    return `<li style="${textDecoration}">${checkbox} `;
+  }
+
+  return self.renderToken(tokens, idx, options);
 };
 
 // Process each Markdown file
@@ -140,9 +154,9 @@ const indexTemplate = fs.readFileSync(
 const recentPosts = posts
   .map(
     (post) => `
-    <li>
-      <a href="${post.url}">${post.title}</a>
-      <span>${post.date.toLocaleDateString()}</span>
+    <li class="recent-posts__list-item">
+      <a class="recent-posts__list-el-a" href="${post.url}">${post.title}</a>
+      <span class="recent-posts__list-el-date">${post.date.toLocaleDateString()}</span>
     </li>
   `
   )
