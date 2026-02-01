@@ -5,8 +5,6 @@ date: 2026-02-01
 tags: ['Business', 'Startups', 'Lessons']
 ---
 
-I always get excited to learn about instances of people building great businesses and products. Recently I got to know about Applied Intuition - founded in 2017 - and it's Founder & CEO Qasar Younis's approach that helped it reach $15B within a decade.
-
 ![Qasar Younis](../images/applied-intuition.jpeg)
 
 # The origin story
