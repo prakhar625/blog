@@ -1,6 +1,3 @@
-
-Actual content starts below:
-
 ---
 title: From the Factory Floor to a $15B Company: Qasar Younis and the Applied Intuition's Playbook
 excerpt: 'Qasar Younis grew up in working-class Detroit, spent two decades collecting experiences across engineering, startups, and venture capital, then built Applied Intuition into a $15B physical AI juggernaut. His playbook is deceptively simple: find your co-founder first, pick a familiar market about to explode, sell to customers your own size, and win by inches.'
