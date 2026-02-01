@@ -2,13 +2,12 @@
 title: From the Factory Floor to a $15B Company: Qasar Younis and the Applied Intuition's Playbook
 excerpt: 'Qasar Younis grew up in working-class Detroit, spent two decades collecting experiences across engineering, startups, and venture capital, then built Applied Intuition into a $15B physical AI juggernaut. His playbook is deceptively simple: find your co-founder first, pick a familiar market about to explode, sell to customers your own size, and win by inches.'
 date: 2026-02-01
-cover_image: ../images/cover-image.jpeg
 tags: ['Business', 'Startups', 'Lessons']
 ---
 
 I always get excited to learn about instances of people building great businesses and products. Recently I got to know about Applied Intuition - founded in 2017 - and it's Founder & CEO Qasar Younis's approach that helped it reach $15B within a decade.
 
-![[https://www.appliedintuitiondefense.com/blog/applied-hosts-congressional-delegation-at-silicon-valley-hq]]
+![Qasar Younis](../images/applied-intuition.jpeg)
 
 # The origin story
 
@@ -63,7 +62,7 @@ Younis advises founders to consume "high-quality inputs" outside of the tech ech
 - He avoids modern business books ("airport books") and reads books that are **at least 25 years old** (e.g., [_SPQR: A History of Ancient Rome_](https://www.amazon.com/SPQR-History-Ancient-Mary-Beard/dp/1631492225/?ref=review.firstround.com),  [The History of the Standard Oil Company](https://www.amazon.com/History-Standard-Company-Vol-Volumes/dp/1605207616) or [_Andy Warhol's autobiography_](https://www.amazon.com/Philosophy-Andy-Warhol-Back-Again/dp/0156717204?ref=review.firstround.com)).
 - “**Knowing what good art is makes you a better founder**.” The residual knowledge sits in his brain for pattern-matching later.
 - The logic is that trends fade, but human nature and the fundamentals of building something great (whether art or business) remain constant.
-- His complete reading list: https://qy.co/books/
+- [His complete reading list](https://qy.co/books/)
 
 ---
 **The takeaway.** Product-market fit wasn't a single eureka moment. It was a sequence: find the right co-founder _first_, pick a familiar market on the verge of exploding, start with customers your own size, and build multi-product muscle early. The market validated Applied Intuition quickly — and it never looked back.

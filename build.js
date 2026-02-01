@@ -1,10 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 const MarkdownIt = require("markdown-it");
+const strikethrough = require("markdown-it-strikethrough-alt");
+const mark = require("markdown-it-mark");
 
 const md = new MarkdownIt({
   html: true,
-});
+  linkify: true,     // Auto-convert URLs to clickable links
+  typographer: true, // Smart quotes, dashes, ellipsis
+  breaks: true,      // Convert newlines to <br>
+})
+  .use(strikethrough) // ~~strikethrough~~
+  .use(mark);         // ==highlighted==
 
 // Read the header and footer templates
 const headerTemplate = fs.readFileSync(

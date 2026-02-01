@@ -15,5 +15,9 @@
     "fs": "^0.0.1-security",
     "markdown-it": "^14.0.0",
     "path": "^0.12.7"
+  },
+  "dependencies": {
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-strikethrough-alt": "^1.0.0"
   }
 }
